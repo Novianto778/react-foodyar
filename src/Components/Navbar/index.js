@@ -15,7 +15,7 @@ const Navbar = ({ handleOpen }) => {
   return (
     <NavbarContainer>
       <NavbarWrapper>
-        <NavbarTitle>Foodyar</NavbarTitle>
+        <NavbarTitle href="#">Foodyar</NavbarTitle>
         <NavbarMenu>
           <Icon onClick={handleOpen}>
             <MenuIcon src="/img/menu.svg" />

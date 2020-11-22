@@ -6,5 +6,9 @@ export const Button = styled.div`
   border-radius: 30px 30px 15px 15px;
   font-weight: 500;
   cursor: pointer;
-  font-size: ${({fontBig}) => (fontBig ? "22px" : "16px")}
+  font-size: ${({ fontBig }) => (fontBig ? "22px" : "16px")};
+
+  &:hover {
+    background-color: ${({ orange }) => (orange ? "#f7c531" : "#FFD2CB")};
+  }
 `;

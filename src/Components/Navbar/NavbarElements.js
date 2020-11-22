@@ -4,8 +4,8 @@ export const NavbarContainer = styled.div`
   display: flex;
   height: 120px;
   width: 100%;
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
   z-index: 10;
   justify-content: center;
   align-items: center;
@@ -13,15 +13,18 @@ export const NavbarContainer = styled.div`
 
 export const NavbarWrapper = styled.div`
   display: flex;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   align-items: center;
 `;
 
-export const NavbarTitle = styled.div`
-  font-size: 24px;
+export const NavbarTitle = styled.a`
+  display: block;
+  font-size: 28px;
   padding: 20px 0;
   font-weight: 500;
+  text-decoration: none;
+  color: #000;
 `;
 
 export const NavbarMenu = styled.ul`
@@ -33,7 +36,7 @@ export const NavbarMenu = styled.ul`
 
 export const NavbarItem = styled.li`
   padding: 22px 35px 22px 0;
-  font-size: 18px;
+  font-size: 22px;
   list-style: none;
   font-weight: ${({ active }) => (active ? 500 : 400)};
 
