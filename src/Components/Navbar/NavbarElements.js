@@ -48,17 +48,23 @@ export const NavbarItem = styled.li`
 `;
 
 export const MenuIcon = styled.img`
+  display: block;
+`;
+
+export const Icon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
     display: block;
     margin-left: auto;
     width: 40px;
+    cursor: pointer;
   }
 `;
 
 export const ButtonWrapper = styled.div`
   display: flex;
+  transition: all 0.3s ease-in-out;
 
   @media screen and (max-width: 768px) {
     display: none;
