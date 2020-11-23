@@ -64,5 +64,5 @@ export const TabItem = styled.div`
             transform: scaleX(1);
         }
     }
-  }
+  
 `;
