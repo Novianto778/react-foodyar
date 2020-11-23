@@ -9,6 +9,6 @@ export const Button = styled.div`
   font-size: ${({ fontBig }) => (fontBig ? "22px" : "16px")};
 
   &:hover {
-    background-color: ${({ orange }) => (orange ? "#f7c531" : "#FFD2CB")};
+    background-color: ${({ orange }) => (orange ? "#FFC10A" : "#FFD2CB")};
   }
 `;
