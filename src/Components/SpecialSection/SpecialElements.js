@@ -39,30 +39,63 @@ export const TabItem = styled.div`
   font-size: 24px;
   margin: 0 15px;
   position: relative;
-  transition: all .35s ease;
+  text-transform: capitalize;
+  transition: all 0.35s ease;
   color: ${({ tabActive }) => (tabActive ? "#F7C531" : "#000")};
-  font-weight: 500;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 2px;
+    bottom: 0;
+    left: 10%;
+    background-color: #f7c531;
+    visibility: ${({ tabActive }) => (tabActive ? "visible" : "hidden")};
+    transform: ${({ tabActive }) => (tabActive ? "scaleX(1)" : "scaleX(0)")};
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  &:hover {
+    cursor: pointer;
 
     &::before {
-        content: "";
-        position: absolute;
-        width: 75%;
-        height: 2px;
-        bottom: 0;
-        left: 10%;
-        background-color: #F7C531;
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out 0s;
+      visibility: visible;
+      transform: scaleX(1);
     }
+  }
+`;
 
-    &:hover {
-        cursor: pointer;
+export const MenuWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+`;
 
-        &::before {
-            visibility: visible;
-            transform: scaleX(1);
-        }
-    }
-  
+export const MenuItem = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-basis: 25%;
+  margin: 0 20px;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const MenuImage = styled.img`
+  display: block;
+  max-width: 240px;
+`;
+
+export const MenuH3 = styled.h3`
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 10px;
+`;
+
+export const MenuP = styled.p`
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-top: 5px;
+  color: #8b8ba5;
 `;

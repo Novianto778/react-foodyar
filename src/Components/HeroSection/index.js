@@ -8,6 +8,7 @@ import {
   ButtonWrapper,
   HeroImage,
   HeroImageWrapper,
+  Underline,
 } from "./HeroElements";
 import { Button } from "../ButtonElements";
 
@@ -16,13 +17,16 @@ const HeroSection = () => {
     <HeroContainer>
       <HeroWrapper>
         <HeroContent>
-          <HeroH1>Eat What You Cook With Us, Together!</HeroH1>
+          <HeroH1>
+            <Underline>Eat</Underline> What You Cook With Us,{" "}
+            <Underline>Together!</Underline>
+          </HeroH1>
           <HeroP>
             When you eat something that cooked by yourself, the happiness is
             priceless.
           </HeroP>
           <ButtonWrapper>
-            <Button orange big fontBig>
+            <Button orange fontBig>
               Decide A Menu
             </Button>
           </ButtonWrapper>

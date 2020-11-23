@@ -7,16 +7,21 @@ import SpecialSection from "./Components/SpecialSection";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [tabActive, setTabActive] = useState(0);
 
   const handleOpen = () => {
     setIsOpen(!isOpen);
   };
+
+  const handleTabActive = (id) => {
+    setTabActive(id)
+  }
   return (
     <>
       <Navbar handleOpen={handleOpen} />
       {isOpen ? <Sidebar handleOpen={handleOpen} /> : null}
       <HeroSection />
-      <SpecialSection />
+      <SpecialSection tabActive={tabActive} handleTabActive={handleTabActive} />
     </>
   );
 };
