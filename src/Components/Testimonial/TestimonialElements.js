@@ -36,6 +36,16 @@ export const TestimonialText = styled.div`
     z-index: -1;
     color: #e5e5e5;
     font-weight: 700;
+
+    @media screen and (max-width: 768px) {
+    font-size: 400px;
+    margin-left: -50px;
+    margin-top: -180px;
+  }
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 28px;
   }
 `;
 

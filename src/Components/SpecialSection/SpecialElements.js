@@ -4,7 +4,7 @@ export const SpecialContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 80px;
 `;
 
 export const SpecialWrapper = styled.div`
@@ -32,6 +32,10 @@ export const SpecialH2 = styled.h2`
 export const TabMenu = styled.div`
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const TabItem = styled.div`
@@ -64,21 +68,29 @@ export const TabItem = styled.div`
       transform: scaleX(1);
     }
   }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 `;
 
 export const MenuWrapper = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 40px;
+  flex-wrap: wrap;
 `;
 
 export const MenuItem = styled.div`
   display: flex;
   justify-content: center;
-  flex-basis: 25%;
   margin: 0 20px;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 `;
 
 export const MenuImage = styled.img`

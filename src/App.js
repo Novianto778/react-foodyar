@@ -5,7 +5,7 @@ import Sidebar from "./Components/Sidebar";
 import HeroSection from "./Components/HeroSection";
 import SpecialSection from "./Components/SpecialSection";
 import Testimonial from "./Components/Testimonial";
-
+import Rating from "./Components/Rating";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +16,8 @@ const App = () => {
   };
 
   const handleTabActive = (id) => {
-    setTabActive(id)
-  }
+    setTabActive(id);
+  };
   return (
     <>
       <Navbar handleOpen={handleOpen} />
@@ -25,6 +25,7 @@ const App = () => {
       <HeroSection />
       <SpecialSection tabActive={tabActive} handleTabActive={handleTabActive} />
       <Testimonial />
+      <Rating />
     </>
   );
 };

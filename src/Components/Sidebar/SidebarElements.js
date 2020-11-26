@@ -12,8 +12,6 @@ export const SidebarContainer = styled.aside`
   top: 0;
   right: 0;
   transition: all 0.3s ease-in-out;
-  /* display: ${({ isOpen }) => (isOpen ? "grid" : "none")};
-  margin-left: ${({ isOpen }) => (isOpen ? "30%" : "0")}; */
 `;
 
 export const CloseIcon = styled.img`
@@ -39,7 +37,7 @@ export const MenuItem = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;

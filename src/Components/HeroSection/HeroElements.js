@@ -32,6 +32,10 @@ export const HeroH1 = styled.h1`
   font-weight: 700;
   margin-bottom: 15px;
   line-height: 1.4;
+
+  @media screen and (max-width: 768px) {
+    font-size: 38px;
+  }
 `;
 
 export const HeroP = styled.p`
@@ -39,6 +43,11 @@ export const HeroP = styled.p`
   font-size: 20px;
   color: #8b8ba5;
   margin-bottom: 40px;
+  
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const ButtonWrapper = styled.a`

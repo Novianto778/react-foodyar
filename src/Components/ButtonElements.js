@@ -11,4 +11,8 @@ export const Button = styled.div`
   &:hover {
     background-color: ${({ orange }) => (orange ? "#FFC10A" : "#FFD2CB")};
   }
+
+  @media screen and (max-width: 768px) {
+   font-size: 16px;
+  }
 `;
