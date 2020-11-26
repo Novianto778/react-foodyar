@@ -4,6 +4,8 @@ import Navbar from "./Components/Navbar";
 import Sidebar from "./Components/Sidebar";
 import HeroSection from "./Components/HeroSection";
 import SpecialSection from "./Components/SpecialSection";
+import Testimonial from "./Components/Testimonial";
+
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +24,7 @@ const App = () => {
       {isOpen ? <Sidebar handleOpen={handleOpen} /> : null}
       <HeroSection />
       <SpecialSection tabActive={tabActive} handleTabActive={handleTabActive} />
+      <Testimonial />
     </>
   );
 };

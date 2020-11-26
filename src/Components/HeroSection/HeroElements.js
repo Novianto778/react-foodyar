@@ -41,8 +41,12 @@ export const HeroP = styled.p`
   margin-bottom: 40px;
 `;
 
-export const ButtonWrapper = styled.div`
-  display: flex;
+export const ButtonWrapper = styled.a`
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: #000;
 `;
 
 export const HeroImageWrapper = styled.div`

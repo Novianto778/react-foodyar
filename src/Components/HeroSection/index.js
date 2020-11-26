@@ -25,7 +25,7 @@ const HeroSection = () => {
             When you eat something that cooked by yourself, the happiness is
             priceless.
           </HeroP>
-          <ButtonWrapper>
+          <ButtonWrapper href="#menu">
             <Button orange fontBig>
               Decide A Menu
             </Button>

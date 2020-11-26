@@ -17,7 +17,7 @@ import { data } from "../data";
 const SpecialSection = ({ tabActive, handleTabActive }) => {
   const dataActive = data.slice(tabActive, tabActive + 1);
   return (
-    <SpecialContainer>
+    <SpecialContainer id="menu">
       <SpecialWrapper>
         <SpecialP>Watch Now</SpecialP>
         <SpecialH2>Special to Try</SpecialH2>
