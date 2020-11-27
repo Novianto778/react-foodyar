@@ -11,26 +11,31 @@ import {
   BtnWrapper,
   Underline,
 } from "./AppElements";
+import { Fade } from "react-reveal";
 
 const AppSection = () => {
   return (
     <AppContainer>
       <AppWrapper>
-        <AppImage src="/img/app.png" />
-        <AppContent>
-          <AppH2>
-            <Underline>Download</Underline> our app and join{" "}
-            <Underline>the contest</Underline>
-          </AppH2>
-          <AppP>
-            In order to improve our cooking skills, we do need a food
-            photography
-          </AppP>
-          <BtnWrapper>
-            <AppStore src="/img/appstore.png" />
-            <GooglePlay src="/img/androidapp.png" />
-          </BtnWrapper>
-        </AppContent>
+        <Fade left>
+          <AppImage src="/img/app.png" />
+        </Fade>
+        <Fade right>
+          <AppContent>
+            <AppH2>
+              <Underline>Download</Underline> our app and join{" "}
+              <Underline>the contest</Underline>
+            </AppH2>
+            <AppP>
+              In order to improve our cooking skills, we do need a food
+              photography
+            </AppP>
+            <BtnWrapper>
+              <AppStore src="/img/appstore.png" />
+              <GooglePlay src="/img/androidapp.png" />
+            </BtnWrapper>
+          </AppContent>
+        </Fade>
       </AppWrapper>
     </AppContainer>
   );

@@ -8,6 +8,8 @@ import Testimonial from "./Components/Testimonial";
 import Rating from "./Components/Rating";
 import AppSection from "./Components/AppSection";
 import Footer from "./Components/Footer";
+import { Fade } from "react-reveal";
+
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,9 +27,18 @@ const App = () => {
       <Navbar handleOpen={handleOpen} />
       {isOpen ? <Sidebar handleOpen={handleOpen} /> : null}
       <HeroSection />
-      <SpecialSection tabActive={tabActive} handleTabActive={handleTabActive} />
-      <Testimonial />
-      <Rating />
+      <Fade bottom>
+        <SpecialSection
+          tabActive={tabActive}
+          handleTabActive={handleTabActive}
+        />
+      </Fade>
+      <Fade bottom>
+        <Testimonial />
+      </Fade>
+      <Fade bottom>
+        <Rating />
+      </Fade>
       <AppSection />
       <Footer />
     </>

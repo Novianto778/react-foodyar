@@ -90,5 +90,9 @@ export const Underline = styled.span`
     visibility: visible;
     border-radius: 5px;
     z-index: -1;
+
+    @media screen and (max-width: 768px){
+      bottom: 6px;
+    }
   }
 `;

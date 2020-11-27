@@ -11,6 +11,7 @@ import {
   Underline,
 } from "./HeroElements";
 import { Button } from "../ButtonElements";
+import { Fade } from "react-reveal";
 
 const HeroSection = () => {
   return (
@@ -31,9 +32,12 @@ const HeroSection = () => {
             </Button>
           </ButtonWrapper>
         </HeroContent>
-        <HeroImageWrapper>
-          <HeroImage src="/img/hero.png" />
-        </HeroImageWrapper>
+
+        <Fade right>
+          <HeroImageWrapper>
+            <HeroImage src="/img/hero.png" />
+          </HeroImageWrapper>
+        </Fade>
       </HeroWrapper>
     </HeroContainer>
   );

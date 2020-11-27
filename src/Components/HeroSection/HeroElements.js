@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const HeroContainer = styled.div`
   height: 520px;
   display: flex;
+
+  @media screen and (max-width: 768px) {
+    height: 340px;
+  }
 `;
 
 export const HeroWrapper = styled.div`
@@ -43,7 +47,7 @@ export const HeroP = styled.p`
   font-size: 20px;
   color: #8b8ba5;
   margin-bottom: 40px;
-  
+
   @media screen and (max-width: 768px) {
     font-size: 18px;
     margin-bottom: 20px;
@@ -63,7 +67,7 @@ export const HeroImageWrapper = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    width: 100%;
+    display: none;
   }
 `;
 
@@ -93,5 +97,9 @@ export const Underline = styled.span`
     visibility: visible;
     border-radius: 5px;
     z-index: -1;
+
+    @media screen and (max-width: 768px){
+      bottom: 10px;
+    }
   }
 `;
