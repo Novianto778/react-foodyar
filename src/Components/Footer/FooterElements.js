@@ -62,5 +62,6 @@ export const FooterCopyright = styled.div`
   width: 90%;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
   text-align: center;
 `;
