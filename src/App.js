@@ -6,6 +6,7 @@ import HeroSection from "./Components/HeroSection";
 import SpecialSection from "./Components/SpecialSection";
 import Testimonial from "./Components/Testimonial";
 import Rating from "./Components/Rating";
+import AppSection from "./Components/AppSection";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,7 @@ const App = () => {
       <SpecialSection tabActive={tabActive} handleTabActive={handleTabActive} />
       <Testimonial />
       <Rating />
+      <AppSection />
     </>
   );
 };
