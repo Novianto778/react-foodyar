@@ -7,6 +7,7 @@ import SpecialSection from "./Components/SpecialSection";
 import Testimonial from "./Components/Testimonial";
 import Rating from "./Components/Rating";
 import AppSection from "./Components/AppSection";
+import Footer from "./Components/Footer";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,6 +29,7 @@ const App = () => {
       <Testimonial />
       <Rating />
       <AppSection />
+      <Footer />
     </>
   );
 };

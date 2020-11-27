@@ -9,6 +9,7 @@ import {
   GooglePlay,
   AppContent,
   BtnWrapper,
+  Underline,
 } from "./AppElements";
 
 const AppSection = () => {
@@ -17,7 +18,10 @@ const AppSection = () => {
       <AppWrapper>
         <AppImage src="/img/app.png" />
         <AppContent>
-          <AppH2>Download our app and join the contest</AppH2>
+          <AppH2>
+            <Underline>Download</Underline> our app and join{" "}
+            <Underline>the contest</Underline>
+          </AppH2>
           <AppP>
             In order to improve our cooking skills, we do need a food
             photography

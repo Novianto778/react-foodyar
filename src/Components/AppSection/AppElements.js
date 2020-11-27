@@ -73,3 +73,22 @@ export const GooglePlay = styled.img`
   display: block;
   max-width: 170px;
 `;
+
+export const Underline = styled.span`
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    bottom: 15px;
+    left: 0;
+    background-color: #ffd2cb;
+    visibility: visible;
+    border-radius: 5px;
+    z-index: -1;
+  }
+`;
