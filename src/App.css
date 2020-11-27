@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 body {
   font-family: "Quicksand", sans-serif;
   scroll-behavior: smooth;
