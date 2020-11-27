@@ -39,7 +39,7 @@ export const FooterItem = styled.div`
 
   @media screen and (max-width: 460px) {
     min-width: 100%;
-    margin-left: 50%;
+    margin-left: 40%;
   }
 `;
 
